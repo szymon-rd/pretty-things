@@ -14,11 +14,12 @@ export class PureCanvas extends Component<PureCanvasProps, any> {
   render() {
     return (
       <canvas
-        width={this.props.width}
-        height={this.props.height}
+        width={this.props.width * 2}
+        height={this.props.height * 2}
         ref={node =>
           node ? this.props.contextRef(node.getContext('webgl2')) : null
         }
+        style={{width: this.props.width, height: this.props.height}}
       />
     );
   }

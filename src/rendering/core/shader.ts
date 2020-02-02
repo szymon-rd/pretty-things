@@ -2,6 +2,10 @@ import * as R from 'ramda';
 import { GL } from '../Engine';
 
 
+export type UniformData = {
+  [name: string]: number
+}
+
 export type UniformList = {
   [name: string]: WebGLUniformLocation
 }
@@ -20,7 +24,6 @@ export const initShaderProgram = (
   fsSource: string,
   uniforms: string[]
 ): ProgramInfo | null => {
-  console.log('init')
   const vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource) as WebGLShader;
   const fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource) as WebGLShader;
   const shaderProgram = gl.createProgram() as WebGLProgram;

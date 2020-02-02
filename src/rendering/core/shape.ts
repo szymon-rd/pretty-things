@@ -26,8 +26,6 @@ export const createShape = (
   mode: number,
   program: ProgramInfo | null
 ): Shape => {
-  console.log(vertices)
-  console.log(indices)
   const vao = gl.createVertexArray()
   gl.bindVertexArray(vao)
   gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, gl.createBuffer());

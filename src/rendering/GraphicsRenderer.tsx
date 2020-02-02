@@ -26,19 +26,20 @@ export class GraphicsRenderer extends Component<any, GraphicsRendererState> {
   }
 
   updateDimensions = () => {
-    this.setState({ width: window.outerWidth, height: window.outerHeight });
+    console.log('update!')
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.state.engine?.updateProjection(window.innerWidth, window.innerHeight)
   };
 
   saveContext = (ctx: WebGL2RenderingContext) => {
     this.setState({
-      engine: new Engine(ctx),
+      engine: new Engine(ctx, window.innerWidth, window.innerHeight),
     });
   };
 
   render() {
-    console.log(window.outerWidth);
     this.state.engine?.start();
-    return <PureCanvas width={window.outerWidth} height={window.outerHeight} contextRef={this.saveContext} />;
+    return <PureCanvas width={window.innerWidth} height={window.innerHeight} contextRef={this.saveContext} />;
   }
 
 }
