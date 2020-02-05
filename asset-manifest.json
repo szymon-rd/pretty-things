@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pretty-things/static/css/main.240dc31e.chunk.css",
+    "main.js": "/pretty-things/static/js/main.841ff303.chunk.js",
+    "main.js.map": "/pretty-things/static/js/main.841ff303.chunk.js.map",
+    "runtime-main.js": "/pretty-things/static/js/runtime-main.7ea83510.js",
+    "runtime-main.js.map": "/pretty-things/static/js/runtime-main.7ea83510.js.map",
+    "static/js/2.3bb7ffc9.chunk.js": "/pretty-things/static/js/2.3bb7ffc9.chunk.js",
+    "static/js/2.3bb7ffc9.chunk.js.map": "/pretty-things/static/js/2.3bb7ffc9.chunk.js.map",
+    "index.html": "/pretty-things/index.html",
+    "precache-manifest.49f88d47f1ae0ae3da377ed8ed2ef059.js": "/pretty-things/precache-manifest.49f88d47f1ae0ae3da377ed8ed2ef059.js",
+    "service-worker.js": "/pretty-things/service-worker.js",
+    "static/css/main.240dc31e.chunk.css.map": "/pretty-things/static/css/main.240dc31e.chunk.css.map",
+    "static/js/2.3bb7ffc9.chunk.js.LICENSE": "/pretty-things/static/js/2.3bb7ffc9.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ea83510.js",
+    "static/js/2.3bb7ffc9.chunk.js",
+    "static/css/main.240dc31e.chunk.css",
+    "static/js/main.841ff303.chunk.js"
+  ]
+}
